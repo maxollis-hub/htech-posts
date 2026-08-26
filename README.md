@@ -82,6 +82,17 @@ vetar** — decisão dele em 26/08. Silêncio significa aprovado.
 
 ## Armadilhas já pagas — não descobrir de novo
 
+- **O relógio desta máquina está em UTC, 3 h à frente de Brasília.** Ao montar o
+  campo `quando`, usar sempre `datetime.now(timezone(timedelta(hours=-3)))`.
+  Com `datetime.now()` puro o post fica 3 h no futuro e a execução passa **verde
+  sem publicar nada**. `preparar.py` já acusa isso quando o post é `"imediato"`.
+- **Execução verde não prova publicação.** A prova é a peça sair de
+  `fila/agendados/` e aparecer em `fila/publicados/` com o id de cada canal.
+- **Para publicar na hora**, pôr `"imediato": true` no JSON — pula a folga
+  mínima de 15 min.
+- **Antes de publicar, checar se a peça já não está agendada em outro lugar**
+  (Canva Planner, Meta Business Suite). Publicar por aqui não cancela nada lá.
+
 - **O Instagram só aceita JPEG.** PNG é recusado. `preparar.py` converte; nunca
   colocar PNG em `midia/` na mão.
 - **Carrossel: no máximo 10 itens**, e todos são cortados na proporção do primeiro.
