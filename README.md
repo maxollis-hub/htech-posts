@@ -20,8 +20,7 @@ no horário, sozinho, sem depender do computador do Max estar ligado.
 |---|---|---|
 | Pauta, roteiro, slides, legendas | Claude | — |
 | Converter mídia, montar e validar a fila, enviar | Claude | 1 comando |
-| Publicar Instagram e LinkedIn do Max no horário | robô do GitHub | automático |
-| Facebook (espelhado do Instagram) | Instagram, sozinho | automático |
+| Publicar Instagram, Facebook e LinkedIn do Max no horário | robô do GitHub | automático |
 | Publicar na **página** do LinkedIn | **Max** | 2 min, 2× por semana* |
 | Story com link e Reel | **Max** | no celular |
 | Colar token novo do LinkedIn | **Max** | 2 min a cada 60 dias |
@@ -44,7 +43,7 @@ Um arquivo JSON por peça em `fila/agendados/`, nomeado `AAAA-MM-DD-Pn.json`:
   "id": "P9",
   "titulo": "Motorredutor superaquecendo",
   "quando": "2026-09-01T08:30:00",
-  "destinos": ["instagram", "linkedin_perfil"],
+  "destinos": ["instagram", "facebook", "linkedin_perfil"],
   "midia_origem": [
     "criacoes/2026-09-01-nord/slides/01.png",
     "criacoes/2026-09-01-nord/slides/02.png"
@@ -97,12 +96,9 @@ vetar** — decisão dele em 26/08. Silêncio significa aprovado.
   com os cinco escopos certos, não expira (`expires_at: 0` no debug_token).
 - **Nunca usar automação de navegador no LinkedIn.** Proteção anti-bot ativa; já
   causou logout forçado e há risco real de restrição da conta do Max.
-- **NÃO incluir `facebook` nos destinos da fila** enquanto a Verificação Comercial
-  não sair. A Meta exige `pages_manage_posts`, que só é liberada depois disso —
-  o erro é `(#200) The permission(s) pages_manage_posts are not available`.
-  Hoje o Facebook é alimentado pelo **compartilhamento automático do Instagram**,
-  configurado na conta, fora do nosso código. Pôr `facebook` na fila só produz
-  falha e post preso na fila.
+- **Facebook LIBERADO em 26/08/2026.** `pages_manage_posts` está no token e foi
+  testada com publicação real (rascunho, depois apagado). Pode usar `facebook`
+  nos destinos normalmente.
 - **Nada é reportado como publicado sem conferir** o arquivo em `fila/publicados/`
   ou a aba Actions. "Parece que funcionou" foi o que gerou o retrabalho de agosto.
 
