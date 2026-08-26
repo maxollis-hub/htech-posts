@@ -126,6 +126,29 @@ def publicar_facebook(post):
 
 # ------------------------------------------------------------------ LinkedIn
 
+def li_person_urn():
+    """Descobre o URN do Max a partir do proprio token.
+
+    Evita manter um secret a mais e evita que ele fique desatualizado. O
+    resultado e cacheado por execucao.
+    """
+    if getattr(li_person_urn, "_cache", None):
+        return li_person_urn._cache
+    fixo = os.environ.get("LI_PERSON_URN", "").strip()
+    if fixo:
+        li_person_urn._cache = fixo
+        return fixo
+    r = requests.get(f"{LI}/v2/userinfo",
+                     headers={"Authorization": f"Bearer {env('LI_TOKEN')}"}, timeout=30)
+    if r.status_code != 200:
+        raise RuntimeError(f"nao consegui descobrir o URN do LinkedIn: {r.status_code} {r.text[:200]}")
+    sub = r.json().get("sub")
+    if not sub:
+        raise RuntimeError("resposta do LinkedIn sem campo 'sub'")
+    li_person_urn._cache = f"urn:li:person:{sub}"
+    return li_person_urn._cache
+
+
 def _li_headers():
     return {"Authorization": f"Bearer {env('LI_TOKEN')}",
             "X-Restli-Protocol-Version": "2.0.0",
@@ -182,7 +205,7 @@ def publicar_linkedin(post, owner_urn):
 DESTINOS = {
     "instagram": lambda p: publicar_instagram(p),
     "facebook": lambda p: publicar_facebook(p),
-    "linkedin_perfil": lambda p: publicar_linkedin(p, env("LI_PERSON_URN")),
+    "linkedin_perfil": lambda p: publicar_linkedin(p, li_person_urn()),
     "linkedin_pagina": lambda p: publicar_linkedin(p, env("LI_ORG_URN")),
 }
 
