@@ -78,8 +78,11 @@ def preparar_post(caminho: Path):
         erro(f"{pid}: campo 'quando' invalido (use 2026-09-01T08:30:00)")
         return
     minutos = (quando - dt.datetime.now(TZ)).total_seconds() / 60
-    if minutos < 15:
-        erro(f"{pid}: agendado para daqui a {minutos:.0f} min — deixe pelo menos 15 min de folga")
+    if minutos < 15 and not post.get("imediato"):
+        erro(f"{pid}: agendado para daqui a {minutos:.0f} min — deixe pelo menos 15 min de folga "
+             f'(para publicar na hora, ponha "imediato": true no JSON)')
+    elif post.get("imediato"):
+        print("  data   PUBLICACAO IMEDIATA — sai assim que o robo rodar")
     else:
         print(f"  data   {quando:%d/%m/%Y %H:%M} (em {minutos/60:.1f} h)")
 
