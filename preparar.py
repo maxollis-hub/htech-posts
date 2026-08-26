@@ -202,6 +202,18 @@ def enviar():
                        capture_output=True, text=True)
         print("repositorio vazio — este sera o primeiro commit")
 
+    # o robo move o que publicou para fila/publicados. Se a copia local continuar
+    # em fila/agendados, o proximo push a devolve para a fila e o post sai DUAS
+    # vezes. Entao: o que o remoto ja publicou sai da fila local aqui.
+    publicados_remoto = {f.name for f in (CLONE / "fila" / "publicados").glob("*.json")}
+    arquivados = RAIZ / "logs" / "_publicados-locais"
+    for nome in publicados_remoto:
+        local = AGENDADOS / nome
+        if local.exists():
+            arquivados.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(local), str(arquivados / nome))
+            print(f"ja publicado, saiu da fila local: {nome}")
+
     for item in COPIAR:
         origem = RAIZ / item
         if not origem.exists():
