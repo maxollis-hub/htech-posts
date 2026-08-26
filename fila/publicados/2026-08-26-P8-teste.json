@@ -18,5 +18,19 @@
     "p8-05.jpg",
     "p8-06.jpg",
     "p8-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-08-26T16:20:09.855887-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": true,
+        "id": "18066833858495918",
+        "permalink": null
+      },
+      "facebook": {
+        "ok": true,
+        "id": "115714084729335_1103395905974487"
+      }
+    }
+  }
 }
