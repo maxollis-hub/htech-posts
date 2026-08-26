@@ -222,7 +222,57 @@ def vencidos(agora):
     return saida
 
 
+def checar():
+    """Check-up das credenciais dos tres canais. NAO publica nada."""
+    ok = True
+
+    print("== Instagram ==")
+    try:
+        r = requests.get(f"{GRAPH}/{env('IG_USER_ID')}",
+                         params={"fields": "username,followers_count",
+                                 "access_token": env("META_TOKEN")}, timeout=30)
+        d = r.json()
+        if r.status_code == 200:
+            print(f"   OK  @{d.get('username')}")
+        else:
+            ok = False; print(f"   ERRO {d}")
+    except Exception as e:
+        ok = False; print(f"   ERRO {e}")
+
+    print("== Facebook ==")
+    try:
+        r = requests.get(f"{GRAPH}/{env('FB_PAGE_ID')}",
+                         params={"fields": "name,fan_count",
+                                 "access_token": env("META_TOKEN")}, timeout=30)
+        d = r.json()
+        if r.status_code == 200:
+            print(f"   OK  {d.get('name')}")
+        else:
+            ok = False; print(f"   ERRO {d}")
+    except Exception as e:
+        ok = False; print(f"   ERRO {e}")
+
+    print("== LinkedIn (perfil) ==")
+    try:
+        r = requests.get(f"{LI}/v2/userinfo",
+                         headers={"Authorization": f"Bearer {env('LI_TOKEN')}"}, timeout=30)
+        d = r.json()
+        if r.status_code == 200:
+            print(f"   OK  {d.get('name')} — urn:li:person:{d.get('sub')}")
+        else:
+            ok = False; print(f"   ERRO {r.status_code} {str(d)[:200]}")
+    except Exception as e:
+        ok = False; print(f"   ERRO {e}")
+
+    print()
+    print("todos os canais respondendo" if ok else "ALGUM CANAL FALHOU — ver acima")
+    if not ok:
+        sys.exit(1)
+
+
 def main():
+    if "--checar" in sys.argv:
+        checar(); return
     somente_listar = "--listar" in sys.argv
     forcar = "--forcar" in sys.argv
     agora = dt.datetime.now(TZ)

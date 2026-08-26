@@ -1,0 +1,21 @@
+name: Check-up dos canais
+
+on:
+  workflow_dispatch:
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: Testar Instagram, Facebook e LinkedIn (sem publicar)
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          LI_TOKEN:   ${{ secrets.LI_TOKEN }}
+        run: python publicar.py --checar
