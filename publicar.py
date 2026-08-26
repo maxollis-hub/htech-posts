@@ -188,6 +188,8 @@ DESTINOS = {
 
 
 def vencidos(agora):
+    AGENDADOS.mkdir(parents=True, exist_ok=True)
+    PUBLICADOS.mkdir(parents=True, exist_ok=True)
     saida = []
     for f in sorted(AGENDADOS.glob("*.json")):
         post = json.loads(f.read_text(encoding="utf-8"))
