@@ -82,7 +82,12 @@ def preparar_post(caminho: Path):
         erro(f"{pid}: agendado para daqui a {minutos:.0f} min — deixe pelo menos 15 min de folga "
              f'(para publicar na hora, ponha "imediato": true no JSON)')
     elif post.get("imediato"):
-        print("  data   PUBLICACAO IMEDIATA — sai assim que o robo rodar")
+        if minutos > 5:
+            erro(f"{pid}: marcado como imediato, mas a data esta {minutos/60:.1f} h no FUTURO. "
+                 "Quase sempre e confusao de fuso: o relogio desta maquina pode estar em UTC, "
+                 "e o robo le tudo como horario de Brasilia. Grave a data com timezone -03:00.")
+        else:
+            print("  data   PUBLICACAO IMEDIATA — sai assim que o robo rodar")
     else:
         print(f"  data   {quando:%d/%m/%Y %H:%M} (em {minutos/60:.1f} h)")
 
