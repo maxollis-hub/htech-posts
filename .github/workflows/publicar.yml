@@ -10,10 +10,6 @@ on:
 permissions:
   contents: write           # para mover os posts publicados dentro do repo
 
-concurrency:
-  group: publicar
-  cancel-in-progress: false # nunca cancelar uma publicacao pela metade
-
 jobs:
   publicar:
     runs-on: ubuntu-latest
