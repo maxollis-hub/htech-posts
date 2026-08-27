@@ -1,0 +1,23 @@
+{
+  "id": "P11",
+  "titulo": "Cabo errado em movimento — Wireflex",
+  "quando": "2026-09-08T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "O cabo não é commodity quando ele se mexe ⚡\n\nCabo de instalação fixa dentro de esteira porta-cabos tem prazo de validade — e não avisa antes de romper.\n\nO cálculo elétrico não muda porque o cabo se mexe. O que muda é a construção mecânica: quantos fios formam o condutor, como as camadas deslizam entre si e quanto a capa aguenta de atrito. A NBR NM 280 classifica isso — classe 2 rígido, classe 5 flexível, classe 6 extra flexível. Trocar classe 6 por classe 2 \"porque a bitola é a mesma\" é o erro mais comum.\n\nTrês coisas que aparecem em quase todo caso que chega aqui:\n\n🔧 Flexão contínua não é o mesmo que instalar e esquecer. O condutor encrua, rompe fio a fio e a falha aparece como intermitência antes de virar parada.\n\n🔧 O raio de curvatura é o número que ninguém confere. Esteira apertada, curva forçada na entrada do painel ou cabo torcido violam esse limite sem ninguém perceber.\n\n🔧 O ambiente ataca a capa antes de atacar o cobre. Óleo, cavaco, calor e sol abrem o isolamento — e aí entra umidade.\n\nE existe cabo feito para isso. A gente especifica qual, pelo movimento e pelo ambiente.\n\nTem cabo rompendo na mesma máquina de novo? Manda uma foto do trecho que se movimenta no direct ou pelo link na bio. Se o problema não for o cabo, a gente também diz.\n\n#htechmotionsolutions #solucoesindustriais #cabosindustriais #manutencaoeletrica #automacaoindustrial #esteiraportacabos #manutencaoindustrial #juizdefora #zonadamata",
+    "linkedin": "Cabo de instalação fixa dentro de esteira porta-cabos tem prazo de validade — e ele não avisa antes de romper.\n\nO cálculo elétrico não muda porque o cabo se mexe: corrente, queda de tensão e proteção continuam os mesmos. O que muda é a construção mecânica — quantos fios formam o condutor, como as camadas deslizam entre si e quanto a capa aguenta de atrito. A NBR NM 280 classifica isso: classe 1 sólido, classe 2 rígido, classe 5 flexível, classe 6 extra flexível. Trocar classe 6 por classe 2 \"porque a bitola é a mesma\" é o erro mais comum.\n\nTrês coisas que aparecem em quase todo caso que chega aqui:\n\nFlexão contínua não é o mesmo que instalar e esquecer. Cabo fixo foi projetado para dobrar uma vez, na montagem. Dentro da esteira ele dobra e desdobra a cada ciclo de máquina. O condutor encrua, rompe fio a fio e a falha aparece como intermitência antes de virar parada. O sintoma que entrega: falha que some quando o eixo para na posição de manutenção e volta quando a máquina anda. Isso quase nunca é o drive.\n\nO raio de curvatura é o número que ninguém confere. Todo cabo tem um raio mínimo definido pelo fabricante. Esteira apertada, curva forçada na entrada do painel ou cabo torcido na instalação violam esse limite sem que ninguém perceba.\n\nO ambiente ataca a capa antes de atacar o cobre. Óleo, cavaco, abrasão na canaleta, temperatura da máquina e sol em área externa atacam primeiro o isolamento. Quando a capa abre, entra umidade — e o problema deixa de ser mecânico e vira elétrico.\n\nE existe cabo feito para isso. Na linha Wireflex que representamos: WIRENAX PONTE FLAT (extra flexível classe 6, indicado em catálogo para esteira porta-cabos, sistema festoon, enrolador de cabo e ponte rolante), WIREMINING SO-M (classe 6 com trança de nylon, projetado para resistir a esforço de torção em máquina móvel) e WIRENAX NC (blindado, para ligar motor ao inversor de frequência).\n\nTem cabo rompendo na mesma máquina de novo? WhatsApp (32) 99143-4653. Se o problema não for o cabo, a gente também diz.\n\n#manutencaoindustrial #automacaoindustrial #htechmotionsolutions"
+  },
+  "midia": [
+    "p11-01.jpg",
+    "p11-02.jpg",
+    "p11-03.jpg",
+    "p11-04.jpg",
+    "p11-05.jpg",
+    "p11-06.jpg",
+    "p11-07.jpg"
+  ]
+}
