@@ -1,5 +1,5 @@
 *HTECH — vigia da publicacao*
-08/09/2026 14:43
+08/09/2026 16:01
 
 Tudo em ordem: nada vencido na fila.
 
@@ -14,4 +14,4 @@ Tudo em ordem: nada vencido na fila.
 Lembrete: stories, reels e a pagina do LinkedIn continuam manuais.
 Ultimas execucoes do robo: 2026-09-08 16:49 success, 2026-09-08 12:12 success, 2026-09-08 01:57 success, 2026-09-08 00:29 failure, 2026-09-07 22:12 failure
 
-Aviso no WhatsApp: ENTREGUE — texto entregue (janela de 24h aberta)
+Aviso no WhatsApp: ENTREGUE — template 'lembrete_agenda' aceito · texto livre tambem enviado (chega se a janela estiver aberta)
