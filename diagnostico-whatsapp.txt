@@ -1,10 +1,8 @@
-== teste do template — 2026-09-08 18:58:55 UTC ==
-template: lembrete_agenda (pt_BR)  destino: 5532991434653
+== criar template — 2026-09-08 19:49:46 UTC ==
 
--- como o template esta cadastrado --
-   nome=lembrete_agenda status=APPROVED idioma=pt_BR categoria=UTILITY
-      [BODY] "Lembrete da sua agenda HTECH.\n\nCompromisso: {{1}}\nQuando: {{2}}\n\nDetalhe: {{3}}\n\nO passo a passo completo esta no evento da agenda."
-
--- envio do template --
+-- criando 'aviso_publicacao' --
 HTTP 200
-resposta: {"messaging_product":"whatsapp","contacts":[{"input":"5532991434653","wa_id":"553291434653"}],"messages":[{"id":"wamid.HBgMNTUzMjkxNDM0NjUzFQIAERgSNTQ1QTY0MDA5NDYwMzRBNjY2AA==","message_status":"accepted"}]}
+resposta: {"id":"2274978553351923","status":"PENDING","category":"UTILITY"}
+
+-- estado atual --
+   nome=aviso_publicacao  STATUS=PENDING  categoria=UTILITY  id=2274978553351923
