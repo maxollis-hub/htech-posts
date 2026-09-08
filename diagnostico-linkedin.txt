@@ -1,0 +1,24 @@
+== diagnostico LinkedIn — 2026-09-08 01:55:03 UTC ==
+
+[userinfo] 200 :: {"name":"HTECH MOTION SOLUTIONS","sub":"973pr4gwdS","locale":{"country":"BR","language":"pt"},"given_name":"HTECH MOTION","family_name":"SOLUTIONS","picture":"https://media.licdn.com/dms/image/v2/D4D03AQHQ5Q97Mskbsw/profile-displayphoto-scale_200_200/B4DZrXdMtGIgAY-/0/1764551348103?e=1790208000&v=be
+[urn] urn:li:person:973pr4gwdS
+
+-- /rest/images?action=initializeUpload --
+  v202509: 200 :: {"value":{"uploadUrlExpiresAt":1788918904350,"uploadUrl":"https://www.linkedin.com/dms-uploads/sp/v2/D4D10AQELItMlOUWHBQ/uploaded-image/B4DaB.udoRI4AA-/0?ca=vector_ads&cn=uploads&iri=B01-77&sync=0&v=beta&ut=26N67K14hPXco
+  v202508: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20250801 is not active"}
+  v202507: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20250701 is not active"}
+  v202506: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20250601 is not active"}
+  v202505: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20250501 is not active"}
+  v202504: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20250401 is not active"}
+  v202503: 200 :: {"value":{"uploadUrlExpiresAt":1788918905930,"uploadUrl":"https://www.linkedin.com/dms-uploads/sp/v2/D4D10AQG2aA6dXMMiDg/uploaded-image/B4DaB.ueA.I4AA-/0?ca=vector_ads&cn=uploads&iri=B01-77&sync=0&v=beta&ut=2gNVlPkiVPXco
+  v202501: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20250101 is not active"}
+  v202411: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20241101 is not active"}
+  v202408: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20240801 is not active"}
+  v202405: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20240501 is not active"}
+  v202401: 426 :: {"status":426,"code":"NONEXISTENT_VERSION","message":"Requested version 20240101 is not active"}
+
+-- /v2/assets?action=registerUpload (caminho antigo) --
+  200 :: {"value":{"mediaArtifact":"urn:li:digitalmediaMediaArtifact:(urn:li:digitalmediaAsset:D4D22AQGZFGiGP_ONeQ,urn:li:digitalmediaMediaArtifactClass:uploaded-image)","uploadMechanism":{"com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest":{"uploadUrl":"https://www.linkedin.com/dms-uploads/sp/v2/D4D22AQGZFGiGP_ONeQ/uploaded-image/B4DaB.uefnKUAA-/0?ca=vector_feedshare&cn=uploads&iri=B01-77&sync=0&v=beta&ut=13UcQvjeZPXco1","headers":{"media-type-family":"STILLIMAGE"}}},"asset":"urn:li:digitalmedi
+
+-- /v2/ugcPosts (so checa se responde, nao cria nada) --
+  400 :: {"status":400,"code":"ILLEGAL_ARGUMENT","message":"Invalid query parameters passed to request"}
