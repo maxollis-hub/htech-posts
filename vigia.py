@@ -169,7 +169,14 @@ def main():
     atrasadas = [p for p in fila if p["quando"] <= limite]
     proximas = sorted([p for p in fila if p["quando"] > limite], key=lambda p: p["quando"])
     execucoes = ultimas_execucoes()
-    falhando = [c for _, c in execucoes[:3] if c not in (None, "success")]
+    # so importa se a execucao MAIS RECENTE falhou: o robo reprocessa o que ficou
+    # para tras, entao falha antiga com verde depois ja esta resolvida
+    ultima = execucoes[0][1] if execucoes else None
+    seguidas = 0
+    for _, c in execucoes:
+        if c in (None, "success"):
+            break
+        seguidas += 1
 
     problemas = []
     if atrasadas:
@@ -177,8 +184,8 @@ def main():
             motivo = "; ".join(f"{k}: {v}" for k, v in p["erros"].items()) or "nenhuma tentativa registrada"
             problemas.append(f"{p['id']} venceu {p['quando']:%d/%m %H:%M} e nao publicou "
                              f"em {', '.join(p['destinos'])} — {motivo}")
-    if len(falhando) >= 2:
-        problemas.append(f"as ultimas {len(falhando)} execucoes do robo falharam")
+    if ultima not in (None, "success"):
+        problemas.append(f"a ultima execucao do robo falhou ({seguidas} seguida(s)) — ver a aba Actions")
     if not fila:
         problemas.append("a fila esta VAZIA — nenhuma peca agendada")
     elif not proximas:
