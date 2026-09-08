@@ -247,6 +247,16 @@ def main():
     ok, como = whatsapp(assunto, f"{agora:%d/%m/%Y %H:%M}", detalhe, texto)
     print(f"WhatsApp: {'OK' if ok else 'FALHOU'} — {como}")
 
+    # registrar a ENTREGA no arquivo: um vigia que não conta se conseguiu avisar
+    # tem o mesmo problema que ele existe para resolver
+    try:
+        rel = Path(RAIZ / "vigia-ultimo-relatorio.txt")
+        rel.write_text(rel.read_text(encoding="utf-8") +
+                       f"\nAviso no WhatsApp: {'ENTREGUE' if ok else 'FALHOU'} — {como}\n",
+                       encoding="utf-8")
+    except Exception as e:
+        print(f"(nao consegui anexar o resultado do aviso ao relatorio: {e})")
+
     if problemas and not ok:
         feito, det = abrir_issue(f"[vigia] {assunto}", texto)
         print(f"Issue de seguranca: {'criada' if feito else 'falhou'} — {det}")
