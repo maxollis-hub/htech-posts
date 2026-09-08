@@ -228,6 +228,15 @@ def main():
     print(texto)
     print()
 
+    # grava o relatorio no repositorio: os logs do Actions nao sao acessiveis
+    # daqui e ninguem abre a aba Actions — este arquivo e o registro consultavel
+    rodape = [""]
+    if execucoes:
+        rodape.append("Ultimas execucoes do robo: " +
+                      ", ".join(f"{d[:16].replace('T',' ')} {c}" for d, c in execucoes[:5]))
+    Path(RAIZ / "vigia-ultimo-relatorio.txt").write_text(
+        texto + "\n".join(rodape) + "\n", encoding="utf-8")
+
     if not problemas and not semanal:
         print("nada a avisar (modo diario, tudo em ordem)")
         return
