@@ -73,7 +73,29 @@ r3 = requests.get(f"{GRAPH}/{PID}",
                   params={"access_token": TOK,
                           "fields": "display_phone_number,verified_name,quality_rating,"
                                     "throughput,status,name_status,health_status"}, timeout=30)
-p(f"HTTP {r3.status_code} :: {r3.text[:700]}")
+try:
+    p(json.dumps(r3.json(), indent=2, ensure_ascii=False))
+except Exception:
+    p(r3.text)
+
+# 4) o que o Meta diz sobre ESTA conversa especifica
+p("")
+p("-- conversa com o destino --")
+r4 = requests.get(f"{GRAPH}/{PID}/conversational_automation",
+                  params={"access_token": TOK}, timeout=30)
+p(f"[automacao] HTTP {r4.status_code} :: {r4.text[:300]}")
+
+# 5) reenviar e guardar o id, para consulta de status
+p("")
+p("-- reenvio de teste --")
+r5 = requests.post(f"{GRAPH}/{PID}/messages",
+                   headers={"Authorization": f"Bearer {TOK}", "Content-Type": "application/json"},
+                   json={"messaging_product": "whatsapp", "recipient_type": "individual",
+                         "to": DEST, "type": "text",
+                         "text": {"preview_url": False,
+                                  "body": "HTECH: teste 3 do vigia. Responda OK se receber."}},
+                   timeout=45)
+p(f"HTTP {r5.status_code} :: {r5.text[:400]}")
 
 open("diagnostico-whatsapp.txt", "w", encoding="utf-8").write("\n".join(linhas) + "\n")
 print("\narquivo gravado")
