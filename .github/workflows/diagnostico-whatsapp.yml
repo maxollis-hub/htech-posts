@@ -1,0 +1,31 @@
+name: Diagnostico WhatsApp
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: Testar o canal WhatsApp
+        env:
+          WA_TOKEN:    ${{ secrets.WA_TOKEN }}
+          WA_PHONE_ID: ${{ secrets.WA_PHONE_ID }}
+          WA_DESTINO:  ${{ secrets.WA_DESTINO }}
+        run: python diagnostico_whatsapp.py
+      - name: Gravar resultado
+        if: always()
+        run: |
+          git config user.name  "robo-htech"
+          git config user.email "robo@htechmotion.com.br"
+          git add diagnostico-whatsapp.txt || true
+          git diff --cached --quiet || git commit -m "diagnostico whatsapp $(date -u +'%d/%m %H:%M UTC')"
+          git push || true
