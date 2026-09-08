@@ -1,0 +1,43 @@
+name: Vigia da publicacao
+
+on:
+  schedule:
+    # 07:40 de Brasilia, seg a sex — checagem diaria (so avisa se houver problema)
+    - cron: "40 10 * * 1-5"
+    # 07:50 de Brasilia, segunda — panorama da semana (avisa sempre)
+    - cron: "50 10 * * 1"
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "diario (so problema) ou semanal (sempre)"
+        required: false
+        default: semanal
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  vigiar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Conferir a fila e avisar
+        env:
+          GITHUB_TOKEN:        ${{ secrets.GITHUB_TOKEN }}
+          WA_TOKEN:            ${{ secrets.WA_TOKEN }}
+          WA_PHONE_ID:         ${{ secrets.WA_PHONE_ID }}
+          WA_DESTINO:          ${{ secrets.WA_DESTINO }}
+          WA_TEMPLATE:         ${{ secrets.WA_TEMPLATE }}
+          WA_TEMPLATE_LANG:    ${{ secrets.WA_TEMPLATE_LANG }}
+          LI_TOKEN_VALIDO_ATE: "2026-10-25"
+        run: |
+          if [ "${{ github.event.schedule }}" = "50 10 * * 1" ] || [ "${{ inputs.modo }}" = "semanal" ]; then
+            python vigia.py --semanal
+          else
+            python vigia.py --diario
+          fi
