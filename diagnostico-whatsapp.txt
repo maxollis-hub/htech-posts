@@ -1,8 +1,8 @@
-== criar template — 2026-09-08 19:49:46 UTC ==
+== criar template — 2026-09-08 19:53:40 UTC ==
 
--- criando 'aviso_publicacao' --
-HTTP 200
-resposta: {"id":"2274978553351923","status":"PENDING","category":"UTILITY"}
+-- ja existe um template 'aviso_publicacao':
+   status=PENDING idioma=pt_BR id=2274978553351923
+   nao vou criar de novo.
 
 -- estado atual --
    nome=aviso_publicacao  STATUS=PENDING  categoria=UTILITY  id=2274978553351923
