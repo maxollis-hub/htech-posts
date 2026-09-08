@@ -19,11 +19,11 @@
     "p9-07.jpg"
   ],
   "resultado": {
-    "publicado_em": "2026-09-07T21:29:52.823808-03:00",
+    "publicado_em": "2026-09-07T22:57:47.530863-03:00",
     "destinos": {
       "linkedin_perfil": {
-        "ok": false,
-        "erro": "426 Client Error: Upgrade Required for url: https://api.linkedin.com/rest/images?action=initializeUpload"
+        "ok": true,
+        "id": "urn:li:ugcPost:7502908066842075137"
       }
     }
   }
