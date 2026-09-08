@@ -108,6 +108,20 @@ def publicados_recentes(dias=7):
 # ------------------------------------------------------------------ avisar
 
 def whatsapp(assunto, quando_txt, detalhe, texto_completo):
+    """Manda o aviso pelo WhatsApp.
+
+    ⚠️ LICAO DE 08/09/2026 — nao inverter esta ordem.
+    A Cloud API responde **HTTP 200 para texto livre mesmo com a janela de 24 h
+    FECHADA** e falha depois, em silencio, por webhook que nao recebemos. A versao
+    anterior mandava texto livre e so caia no template quando o texto era
+    RECUSADO — como ele nunca e recusado, o template nunca era usado e o aviso
+    simplesmente nao chegava. Verde no Actions, nada no celular.
+
+    Agora o **template vem primeiro e sempre**: e o unico caminho que entrega fora
+    da janela, custa ~R$ 0,03-0,05 e e o que carrega a informacao essencial. O
+    texto livre vai depois, como bonus: se a janela estiver aberta ele chega com o
+    relatorio inteiro; se estiver fechada ele se perde, e nao faz falta.
+    """
     tok = os.environ.get("WA_TOKEN", "").strip()
     pid = os.environ.get("WA_PHONE_ID", "").strip()
     para = "".join(c for c in os.environ.get("WA_DESTINO", "") if c.isdigit())
@@ -115,34 +129,47 @@ def whatsapp(assunto, quando_txt, detalhe, texto_completo):
         return False, "WhatsApp nao configurado (faltam WA_TOKEN/WA_PHONE_ID/WA_DESTINO)"
 
     cab = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json"}
-    s, corpo = http(f"{GRAPH}/{pid}/messages", {
-        "messaging_product": "whatsapp", "recipient_type": "individual",
-        "to": para, "type": "text",
-        "text": {"preview_url": False, "body": texto_completo[:4000]}}, cab)
-    if s == 200:
-        return True, "texto entregue (janela de 24h aberta)"
-
-    # fora da janela de 24h o texto livre e recusado (#131047): vai de template
     nome = os.environ.get("WA_TEMPLATE", "").strip()
-    if not nome:
-        return False, f"texto recusado ({s}) e nenhum WA_TEMPLATE configurado :: {corpo[:200]}"
     idioma = os.environ.get("WA_TEMPLATE_LANG", "pt_BR").strip()
 
     def limpar(t):
         # variavel de template nao aceita quebra de linha nem espaco duplo
         return " ".join(str(t).split())[:900]
 
-    s2, corpo2 = http(f"{GRAPH}/{pid}/messages", {
+    entregue, como = False, ""
+
+    # 1) TEMPLATE — o caminho garantido
+    if nome:
+        s1, c1 = http(f"{GRAPH}/{pid}/messages", {
+            "messaging_product": "whatsapp", "recipient_type": "individual",
+            "to": para, "type": "template",
+            "template": {"name": nome, "language": {"code": idioma},
+                         "components": [{"type": "body", "parameters": [
+                             {"type": "text", "text": limpar(assunto)},
+                             {"type": "text", "text": limpar(quando_txt)},
+                             {"type": "text", "text": limpar(detalhe)}]}]}}, cab)
+        if s1 == 200:
+            entregue, como = True, f"template '{nome}' aceito"
+        else:
+            como = f"template recusado ({s1}): {c1[:200]}"
+    else:
+        como = "sem WA_TEMPLATE configurado"
+
+    # 2) TEXTO LIVRE — bonus, so chega se a janela de 24 h estiver aberta
+    s2, c2 = http(f"{GRAPH}/{pid}/messages", {
         "messaging_product": "whatsapp", "recipient_type": "individual",
-        "to": para, "type": "template",
-        "template": {"name": nome, "language": {"code": idioma},
-                     "components": [{"type": "body", "parameters": [
-                         {"type": "text", "text": limpar(assunto)},
-                         {"type": "text", "text": limpar(quando_txt)},
-                         {"type": "text", "text": limpar(detalhe)}]}]}}, cab)
+        "to": para, "type": "text",
+        "text": {"preview_url": False, "body": texto_completo[:4000]}}, cab)
     if s2 == 200:
-        return True, f"template '{nome}' entregue"
-    return False, f"texto {s} e template {s2} :: {corpo2[:250]}"
+        como += " · texto livre tambem enviado (chega se a janela estiver aberta)"
+    else:
+        como += f" · texto livre recusado ({s2})"
+
+    if not entregue and s2 == 200:
+        # sem template, o texto livre e tudo o que temos — mas nao da para
+        # afirmar entrega, entao nao mentimos dizendo que deu certo
+        return False, como + " — SEM GARANTIA DE ENTREGA (janela pode estar fechada)"
+    return entregue, como
 
 
 def abrir_issue(titulo, corpo):
