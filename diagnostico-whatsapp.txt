@@ -1,4 +1,4 @@
-== diagnostico WhatsApp (rodada 2) — 2026-09-08 18:54:10 UTC ==
+== diagnostico WhatsApp (rodada 2) — 2026-09-08 18:56:26 UTC ==
 
 -- numeros registrados nesta WhatsApp Business Account --
 HTTP 200
@@ -7,7 +7,67 @@ HTTP 200
 --- o destino NAO esta na WABA. A hipotese principal cai; ver abaixo.
 
 -- saude da conta --
-HTTP 200 :: {"id":"1597874738563069","name":"Htech Motion Solutions","account_review_status":"APPROVED","business_verification_status":"verified"}
+HTTP 200 :: {"id":"1597874738563069","name":"Htech Motion Solutions","account_review_status":"APPROVED","business_verification_status":"verified","health_status":{"can_send_message":"AVAILABLE","entities":[{"entity_type":"WABA","id":"1597874738563069","can_send_message":"AVAILABLE"},{"entity_type":"BUSINESS","id":"532559495485392","can_send_message":"AVAILABLE"},{"entity_type":"APP","id":"1041142838413525","can_send_message":"AVAILABLE"}]}}
 
 -- saude do numero remetente --
-HTTP 200 :: {"display_phone_number":"+55 32 9865-3070","verified_name":"Htech Motion Solutions","quality_rating":"GREEN","throughput":{"level":"STANDARD"},"status":"CONNECTED","name_status":"DECLINED","health_status":{"can_send_message":"LIMITED","entities":[{"entity_type":"PHONE_NUMBER","id":"1132323199974749","can_send_message":"LIMITED","can_receive_call_sip":"BLOCKED","errors":[{"error_code":138024,"error_description":"WhatsApp Business calling cannot use SIP because it is not enabled","possible_solution":"Configure SIP using {PHONE_NUMBER_ID}\/settings API"}],"additional_info":["Your display name has not been approved yet. Your message limit will increase after the display name is approved."]},{"en
+{
+  "display_phone_number": "+55 32 9865-3070",
+  "verified_name": "Htech Motion Solutions",
+  "quality_rating": "GREEN",
+  "throughput": {
+    "level": "STANDARD"
+  },
+  "status": "CONNECTED",
+  "name_status": "DECLINED",
+  "health_status": {
+    "can_send_message": "LIMITED",
+    "entities": [
+      {
+        "entity_type": "PHONE_NUMBER",
+        "id": "1132323199974749",
+        "can_send_message": "LIMITED",
+        "can_receive_call_sip": "BLOCKED",
+        "errors": [
+          {
+            "error_code": 138024,
+            "error_description": "WhatsApp Business calling cannot use SIP because it is not enabled",
+            "possible_solution": "Configure SIP using {PHONE_NUMBER_ID}/settings API"
+          }
+        ],
+        "additional_info": [
+          "Your display name has not been approved yet. Your message limit will increase after the display name is approved."
+        ]
+      },
+      {
+        "entity_type": "WABA",
+        "id": "1597874738563069",
+        "can_send_message": "AVAILABLE"
+      },
+      {
+        "entity_type": "BUSINESS",
+        "id": "532559495485392",
+        "can_send_message": "AVAILABLE"
+      },
+      {
+        "entity_type": "APP",
+        "id": "1041142838413525",
+        "can_send_message": "AVAILABLE",
+        "can_receive_call_sip": "BLOCKED",
+        "errors": [
+          {
+            "error_code": 138025,
+            "error_description": "This app cannot use SIP for WhatsApp Business calling because it has not configured a SIP server for this business phone number",
+            "possible_solution": "Configure SIP server using {PHONE_NUMBER_ID}/settings API"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "1132323199974749"
+}
+
+-- conversa com o destino --
+[automacao] HTTP 400 :: {"error":{"message":"(#100) Tried accessing nonexisting field (conversational_automation)","type":"OAuthException","code":100,"fbtrace_id":"AZAnmZs0cQ2cFEyC3qVy3af"}}
+
+-- reenvio de teste --
+HTTP 200 :: {"messaging_product":"whatsapp","contacts":[{"input":"5532991434653","wa_id":"553291434653"}],"messages":[{"id":"wamid.HBgMNTUzMjkxNDM0NjUzFQIAERgSRjk3MjNGMDVBRkNENzIxQTUxAA=="}]}
