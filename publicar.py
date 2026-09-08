@@ -149,10 +149,56 @@ def li_person_urn():
     return li_person_urn._cache
 
 
+def li_versoes_candidatas():
+    """Versoes da API do LinkedIn, da mais nova para a mais velha (AAAAMM)."""
+    hoje = dt.datetime.now(TZ)
+    ano, mes = hoje.year, hoje.month
+    saida = []
+    for _ in range(18):
+        saida.append(f"{ano:04d}{mes:02d}")
+        mes -= 1
+        if mes == 0:
+            ano, mes = ano - 1, 12
+    return saida
+
+
+def li_versao():
+    """Descobre a versao ativa da API do LinkedIn.
+
+    O LinkedIn desativa versoes antigas sem aviso: em 08/09/2026 a versao fixa
+    que estava no codigo (202506) passou a devolver 426 NONEXISTENT_VERSION e o
+    canal ficou parado uma semana sem ninguem ver. Agora o robo testa as versoes
+    do mais novo para o mais velho e usa a primeira que o app aceitar. Da para
+    fixar uma versao pelo secret LI_VERSION, se algum dia for preciso.
+    """
+    if getattr(li_versao, "_cache", None):
+        return li_versao._cache
+    fixa = os.environ.get("LI_VERSION", "").strip()
+    if fixa:
+        li_versao._cache = fixa
+        return fixa
+    for v in li_versoes_candidatas():
+        r = requests.post(f"{LI}/rest/images?action=initializeUpload",
+                          headers={"Authorization": f"Bearer {env('LI_TOKEN')}",
+                                   "X-Restli-Protocol-Version": "2.0.0",
+                                   "LinkedIn-Version": v,
+                                   "Content-Type": "application/json"},
+                          json={"initializeUploadRequest": {"owner": li_person_urn()}},
+                          timeout=30)
+        if r.status_code in (200, 201):
+            li_versao._cache = v
+            log(f"  LinkedIn: usando a versao de API {v}")
+            return v
+        if r.status_code == 426:
+            continue
+        raise RuntimeError(f"LinkedIn recusou ao detectar a versao: {r.status_code} {r.text[:250]}")
+    raise RuntimeError("nenhuma versao da API do LinkedIn foi aceita — conferir os produtos do app")
+
+
 def _li_headers():
     return {"Authorization": f"Bearer {env('LI_TOKEN')}",
             "X-Restli-Protocol-Version": "2.0.0",
-            "LinkedIn-Version": "202506",
+            "LinkedIn-Version": li_versao(),
             "Content-Type": "application/json"}
 
 
@@ -261,6 +307,14 @@ def checar():
             print(f"   OK  {d.get('name')} — urn:li:person:{d.get('sub')}")
         else:
             ok = False; print(f"   ERRO {r.status_code} {str(d)[:200]}")
+    except Exception as e:
+        ok = False; print(f"   ERRO {e}")
+
+    # /v2/userinfo responder nao significa que da para PUBLICAR: quem publica e a
+    # API versionada. Sem este teste o check-up fica verde com o canal quebrado.
+    print("== LinkedIn (envio de imagem — o que realmente publica) ==")
+    try:
+        print(f"   OK  versao de API ativa: {li_versao()}")
     except Exception as e:
         ok = False; print(f"   ERRO {e}")
 
