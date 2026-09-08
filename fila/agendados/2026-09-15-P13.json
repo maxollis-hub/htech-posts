@@ -1,0 +1,24 @@
+{
+  "id": "P13",
+  "titulo": "Medição de nível sem ponto cego — Aselco",
+  "quando": "2026-09-15T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "Alarme falso não é defeito do sensor. Quase sempre é tecnologia errada para o processo. ⚙️\n\nQuatro problemas que parecem o mesmo problema e não são:\n\n📌 Sólido em silo — grão, cimento, minério e cavaco formam pico no enchimento e cratera na descarga. Um radar convencional lê a distância até o primeiro eco e o software transforma aquilo em volume como se a superfície fosse plana. O radar 3D gira e varre o silo inteiro: 360°, até 16.200 pontos, precisão de nível de ±4 mm e de volume de ±0,8% do fundo de escala.\n\n📌 Líquido em tanque, torre e reator — o radar de onda livre mede sem encostar no produto. O que decide a instalação é o ângulo do feixe: 3° de abertura enxerga menos parede, escada e agitador. A tecnologia IsoLens elimina a banda morta do topo, então dá para medir tanque cheio.\n\n📌 Vapor, espuma e interface — aí o sem contato sofre, porque o eco volta da espuma. A onda guiada leva o sinal por uma sonda mergulhada no produto e não é suscetível a vapor, espuma nem variação de densidade.\n\n📌 Intertravamento — nível alto de segurança, silo vazio e calha entupida não precisam de leitura contínua, precisam de contato seco confiável. RF admitância para incrustação e alta temperatura, micro-ondas para produto abrasivo sem contato, vibratória para líquido limpo e linha sanitária.\n\nArrasta pra ver onde cada uma enxerga.\n\nQual é o seu produto e o que você precisa garantir? Chama no direct ou pelo link na bio.\n\n📌 Especificações das fichas técnicas oficiais da Aselco, marca representada pela HTECH. Nosso papel é o diagnóstico e a escolha da tecnologia.\n\n#htechmotionsolutions #solucoesindustriais #instrumentacao #automacaoindustrial #medicaodenivel #juizdefora",
+    "linkedin": "Toda planta tem aquele ponto de medição em que ninguém confia mais.\n\nO operador olha o valor na tela e vai conferir na escada. O alarme dispara no meio do turno e todo mundo já sabe que é falso. A cada parada alguém sobe para limpar a sonda.\n\nNa maioria das vezes o instrumento não está com defeito. Ele foi especificado para um processo diferente do que existe ali.\n\nNível não é um problema só. São pelo menos quatro:\n\n▸ **Sólido em silo** — a superfície não é plana. Forma pico no enchimento e cratera na descarga. Medir um ponto e converter em volume é estimar. O radar 3D varre 360° com até 16.200 pontos e devolve o perfil real: precisão de nível de ±4 mm e de volume de ±0,8% do fundo de escala.\n\n▸ **Líquido em tanque, torre ou reator** — o radar de onda livre resolve sem contato, desde que o feixe caiba. Ângulo total de 3° e tecnologia IsoLens, que elimina a banda morta do topo.\n\n▸ **Vapor, espuma, interface** — é onde o sem contato erra, porque o eco volta da espuma. A onda guiada conduz o sinal pela sonda e não é suscetível a vapor, espuma, variação de densidade ou constante dielétrica baixa. Sai em 24 VDC a 2 fios com HART.\n\n▸ **Intertravamento** — não precisa de leitura contínua, precisa de contato confiável. RF admitância quando há incrustação e temperatura até 550 °C; micro-ondas quando não se pode tocar no produto; vibratória para líquido limpo, grão e linha sanitária.\n\nA HTECH especifica pelo processo real — produto, temperatura, espuma, incrustação, geometria do vaso e o que o intertravamento precisa garantir. Se a tecnologia que você já tem resolver, a gente diz isso também.\n\nEspecificações das fichas técnicas oficiais da Aselco, marca que representamos.\n\n#htechmotionsolutions #solucoesindustriais #instrumentacao #automacaoindustrial"
+  },
+  "midia": [
+    "p13-01.jpg",
+    "p13-02.jpg",
+    "p13-03.jpg",
+    "p13-04.jpg",
+    "p13-05.jpg",
+    "p13-06.jpg",
+    "p13-07.jpg",
+    "p13-08.jpg"
+  ]
+}

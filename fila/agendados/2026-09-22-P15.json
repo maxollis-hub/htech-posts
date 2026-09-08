@@ -1,0 +1,23 @@
+{
+  "id": "P15",
+  "titulo": "Os 4 números antes de comprar um servo — Kollmorgen",
+  "quando": "2026-09-22T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "O servo queimou de novo e ninguém mudou nada na máquina? Então alguma coisa mudou. ⚙️\n\nQuando um servo é trocado por igual, a especificação original é repetida sem que ninguém confira se a máquina ainda é a mesma. Carga aumentou, ciclo apertou, o galpão esquentou — e o motor continua sendo o de dez anos atrás.\n\nO catálogo responde uma pergunta: quanto de torque. A máquina pergunta outras quatro:\n\n1️⃣ **Inércia refletida** — o motor não enxerga a máquina, enxerga o que chega ao eixo dele depois do redutor, da polia e do fuso. Inércia muito maior que a do rotor faz o controle demorar para estabilizar: oscila, perde precisão e o ajuste do drive vira tentativa e erro.\n\n2️⃣ **Torque eficaz, não o de pico** — o número grande do catálogo vale por alguns instantes na aceleração. O que aquece o motor é o valor eficaz do ciclo inteiro: acelera, corta, mantém, freia, descansa.\n\n3️⃣ **Ciclo de trabalho** — partidas seguidas não deixam o motor esfriar. E eixo vertical parado segurando carga consome corrente sem girar, esquentando sem ventilação nenhuma. Freio de retenção é opcional, não item de série.\n\n4️⃣ **Ambiente** — todo desempenho publicado tem uma temperatura embutida. O catálogo AKM avalia o bobinamento para 100 °C de elevação sobre 40 °C de ambiente. Painel fechado e galpão sem exaustão mudam essa conta.\n\nArrasta pra ver o que perguntar antes de fechar o pedido.\n\nVai trocar um servo ou dimensionar um eixo novo? Manda a foto da placa no direct ou pelo link na bio.\n\n📌 Especificações do catálogo oficial da família AKM, Kollmorgen — marca representada pela HTECH.\n\n#htechmotionsolutions #solucoesindustriais #servomotor #automacaoindustrial #manutencaoindustrial #juizdefora",
+    "linkedin": "\"Trocamos o servo e três meses depois queimou de novo.\"\n\nEssa frase quase sempre vem junto com outra: \"e ninguém mexeu na máquina\".\n\nSó que a máquina mudou. Ganhou uma estação, o ciclo apertou para dar conta da demanda, alguém trocou a ferramenta por uma mais pesada, o galpão fechou uma parede. A especificação que fazia sentido dez anos atrás foi repetida na nota fiscal sem que ninguém refizesse a conta.\n\nO catálogo responde uma pergunta só: quanto de torque. A máquina pergunta outras quatro.\n\n**1. Inércia refletida.** O motor não enxerga a máquina — enxerga a inércia que chega ao eixo dele depois do redutor, da polia e do fuso. Quando ela é muito maior que a do rotor, o controle demora para estabilizar: a máquina oscila, perde precisão e a sintonia do drive vira tentativa e erro. Vale notar: dois motores de mesmo torque podem ter rotores de inércia diferente. O catálogo AKM oferece o mesmo torque em mais de uma carcaça justamente para permitir esse casamento.\n\n**2. Torque eficaz, não o de pico.** O número grande do catálogo é o que o motor entrega por instantes na aceleração. O que aquece e decide se ele aguenta o turno é o valor eficaz do ciclo inteiro. Dimensionar pelo pico dá motor pequeno demais; dimensionar pelo topo da curva dá motor caro demais.\n\n**3. Ciclo de trabalho.** Quantas partidas por hora, e o que o eixo faz quando está parado. Eixo vertical segurando carga consome corrente sem girar — esquenta sem ventilação. E o freio de retenção é opcional no AKM, não item de série: se não entrar na especificação, não dá para acrescentar depois.\n\n**4. Ambiente.** Todo desempenho publicado pressupõe uma condição. O catálogo AKM declara o bobinamento avaliado para 100 °C de elevação sobre 40 °C de ambiente, com isolação classe F e termistor embutido. O grau de proteção também não vem sozinho: depende do conector e da vedação de eixo escolhidos, entre IP54, IP65 e IP67.\n\nNenhuma dessas quatro respostas está no catálogo. Todas estão na máquina.\n\nA HTECH faz o apoio de engenharia em motion: levanta o perfil de movimento, calcula a inércia refletida e o torque eficaz, e só então escolhe o motor. Se o que está instalado ainda serve, a gente diz isso também.\n\nEspecificações do catálogo oficial da família AKM, Kollmorgen — marca que representamos.\n\n#htechmotionsolutions #solucoesindustriais #servomotor #automacaoindustrial"
+  },
+  "midia": [
+    "p15-01.jpg",
+    "p15-02.jpg",
+    "p15-03.jpg",
+    "p15-04.jpg",
+    "p15-05.jpg",
+    "p15-06.jpg",
+    "p15-07.jpg"
+  ]
+}
