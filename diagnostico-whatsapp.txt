@@ -1,20 +1,13 @@
-== diagnostico WhatsApp — 2026-09-08 18:17:26 UTC ==
-phone_number_id configurado: 1132323199974749
-destino configurado:         5532991434653
+== diagnostico WhatsApp (rodada 2) — 2026-09-08 18:54:10 UTC ==
 
-[quem sou eu] 200 :: {"display_phone_number":"+55 32 9865-3070","verified_name":"Htech Motion Solutions","quality_rating":"GREEN","platform_type":"CLOUD_API","id":"1132323199974749"}
+-- numeros registrados nesta WhatsApp Business Account --
+HTTP 200
+   +55 32 9865-3070  (Htech Motion Solutions)  id=1132323199974749
 
--- envio de teste (texto livre) --
-  HTTP 200
-  resposta: {"messaging_product":"whatsapp","contacts":[{"input":"5532991434653","wa_id":"553291434653"}],"messages":[{"id":"wamid.HBgMNTUzMjkxNDM0NjUzFQIAERgSRjZDNEJFREI3QjhDNTMyM0Q4AA=="}]}
+--- o destino NAO esta na WABA. A hipotese principal cai; ver abaixo.
 
-  input (o que mandamos): 5532991434653
-  wa_id (para onde foi):  553291434653
-  *** DIFERENTE — a Meta normalizou o numero. Se nao chegou, use o wa_id
-  *** como WA_DESTINO: 553291434653
-  message id: wamid.HBgMNTUzMjkxNDM0NjUzFQIAERgSRjZDNEJFREI3QjhDNTMyM0Q4AA==
-  status:     (nao informado)
+-- saude da conta --
+HTTP 200 :: {"id":"1597874738563069","name":"Htech Motion Solutions","account_review_status":"APPROVED","business_verification_status":"verified"}
 
--- tentativa com o numero SEM o nono digito --
-  testando 553291434653
-  HTTP 200 :: {"messaging_product":"whatsapp","contacts":[{"input":"553291434653","wa_id":"553291434653"}],"messages":[{"id":"wamid.HBgMNTUzMjkxNDM0NjUzFQIAERgSODY1OUQzRjNCRDU5NTJFRjYxAA=="}]}
+-- saude do numero remetente --
+HTTP 200 :: {"display_phone_number":"+55 32 9865-3070","verified_name":"Htech Motion Solutions","quality_rating":"GREEN","throughput":{"level":"STANDARD"},"status":"CONNECTED","name_status":"DECLINED","health_status":{"can_send_message":"LIMITED","entities":[{"entity_type":"PHONE_NUMBER","id":"1132323199974749","can_send_message":"LIMITED","can_receive_call_sip":"BLOCKED","errors":[{"error_code":138024,"error_description":"WhatsApp Business calling cannot use SIP because it is not enabled","possible_solution":"Configure SIP using {PHONE_NUMBER_ID}\/settings API"}],"additional_info":["Your display name has not been approved yet. Your message limit will increase after the display name is approved."]},{"en
