@@ -19,5 +19,23 @@
     "p15-05.jpg",
     "p15-06.jpg",
     "p15-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-09-22T11:46:17.045274-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": true,
+        "id": "18095981252295071",
+        "permalink": null
+      },
+      "facebook": {
+        "ok": true,
+        "id": "115714084729335_1127770430203701"
+      },
+      "linkedin_perfil": {
+        "ok": true,
+        "id": "urn:li:ugcPost:7508175236929060865"
+      }
+    }
+  }
 }
