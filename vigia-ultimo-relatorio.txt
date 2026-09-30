@@ -1,9 +1,9 @@
 *HTECH — vigia da publicacao*
-29/09/2026 13:37
+30/09/2026 13:29
 
 *ATENCAO*
 - a fila esta VAZIA — nenhuma peca agendada
 
-Ultimas execucoes do robo: 2026-09-29 16:28 success, 2026-09-29 02:34 success, 2026-09-28 23:12 success, 2026-09-28 18:07 success, 2026-09-26 01:28 success
+Ultimas execucoes do robo: 2026-09-30 16:23 success, 2026-09-30 00:21 success, 2026-09-29 21:00 success, 2026-09-29 16:28 success, 2026-09-29 02:34 success
 
 Aviso no WhatsApp: ENTREGUE — template 'aviso_publicacao' aceito · texto livre tambem enviado (chega se a janela estiver aberta)
