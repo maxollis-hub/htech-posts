@@ -1,0 +1,23 @@
+{
+  "id": "T2",
+  "titulo": "Quatro fabricantes, um mesmo método",
+  "quando": "2026-10-22T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "Eurotherm, SSD, Allen-Bradley, WEG. Drive CC de linha antiga e inversor atual. ⚙️\n\nFotos nossas, de atendimentos em campo. Não de catálogo.\n\nDe uma marca para outra muda a parametrização, o código de falha e a reposição. O método de diagnóstico não muda:\n\n1️⃣ rede elétrica\n2️⃣ dimensionamento × carga real\n3️⃣ temperatura e ventilação do painel\n4️⃣ aterramento e ruído\n5️⃣ histórico de alarmes\n\nReparar sem investigar a causa é reparar para queimar de novo.\n\nDrive ou inversor parado, de qualquer marca? Manda a foto da etiqueta e do display no direct ou pelo link na bio.\n\n#htechmotionsolutions #solucoesindustriais #manutencaoindustrial #inversordefrequencia #automacaoindustrial #juizdefora",
+    "linkedin": "Eurotherm 590P. SSD 590. Allen-Bradley PowerFlex 4. WEG CFW500.\n\nQuatro fabricantes, dois drives de corrente contínua de linha antiga e dois inversores de frequência atuais. Todos atendidos em campo pela HTECH; as fotos são nossas, não de catálogo.\n\nDe uma marca para outra muda a parametrização, o código de falha e a reposição. O método de diagnóstico não muda. Seja qual for a etiqueta, olhamos cinco frentes:\n\n1. Rede elétrica: surto, queda, desequilíbrio de fase.\n2. Dimensionamento contra a carga real, que muitas vezes mudou desde a instalação.\n3. Temperatura e ventilação do painel.\n4. Aterramento e ruído elétrico.\n5. Histórico de alarmes.\n\nParte da resposta está no painel, não na placa. Ventilação insuficiente, drive colado em componente que esquenta, cabo de potência junto com cabo de sinal, aterramento no ponto errado: nada disso aparece na bancada. Por isso o atendimento começa onde o equipamento trabalha.\n\nSe o seu parou, anote três coisas antes de chamar: o código de falha (foto do display no momento da parada), quando parou (partida, carga, horário) e se é a primeira vez.\n\nReparar sem investigar a causa é reparar para queimar de novo. E se não compensar reparar, a gente diz.\n\n#htechmotionsolutions #solucoesindustriais #manutencaoindustrial #inversordefrequencia"
+  },
+  "midia": [
+    "t2-01.jpg",
+    "t2-02.jpg",
+    "t2-03.jpg",
+    "t2-04.jpg",
+    "t2-05.jpg",
+    "t2-06.jpg",
+    "t2-07.jpg"
+  ]
+}

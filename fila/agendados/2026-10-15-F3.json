@@ -1,0 +1,23 @@
+{
+  "id": "F3",
+  "titulo": "Sua ferramenta pede mais ar do que a rede entrega?",
+  "quando": "2026-10-15T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "Ferramenta perde força só no pico do turno? Antes de mandar pro conserto, faz a conta do ar. 🔧\n\n1️⃣ Cada ferramenta tem uma vazão de catálogo. Na Reitz: lixadeira LOR-100/5\" e esmerilhadeira reta ER-110/3 pedem 0,7 m³/min cada.\n\n2️⃣ Some as que trabalham juntas na pior hora do turno. Duas lixadeiras e uma esmerilhadeira = 2,1 m³/min, cerca de 74 pcm.\n\n3️⃣ Compare com a vazão efetiva do compressor. E lembre que máquinas, sopros e vazamentos tiram ar da mesma conta.\n\n4️⃣ Confira o ponto de uso: no máximo 2 ferramentas por lubrifil, mangueira de até 8 m, diâmetro certo para o pino.\n\nArrasta pra ver a conta completa.\n\nFerramenta perdendo força no pico? Chama no direct ou pelo link na bio.\n\n📌 Vazões e recomendações do catálogo Reitz 2026, marca representada pela HTECH.\n\n#htechmotionsolutions #solucoesindustriais #ferramentaspneumaticas #arcomprimido #manutencaoindustrial #juizdefora",
+    "linkedin": "\"A ferramenta está fraca. Manda pro conserto.\"\n\nAntes disso, vale uma conta de cinco minutos. Ferramenta que perde força só no pico do turno costuma ser falta de vazão, não defeito.\n\n1. Cada ferramenta tem uma vazão de catálogo, o ar que ela consome trabalhando. No catálogo Reitz 2026: lixadeira orbital LOR-100/5\", 0,7 m³/min; esmerilhadeira reta ER-110/3, 0,7 m³/min; movimentador MRR-7/20 P, 1,1 m³/min; lixadeira LR-80/7\" SU, 1,5 m³/min.\n\n2. Some as que trabalham ao mesmo tempo, no pico, não na média. Duas lixadeiras LOR-100/5\" e uma ER-110/3 acionadas juntas pedem 2,1 m³/min. Compressor costuma vir em pcm: pela tabela do próprio catálogo, 1 m³/min = 35,3 pcm, então são cerca de 74 pcm.\n\n3. Compare com a vazão efetiva do compressor. Se a soma chega perto, a pressão cai no pico e todas as ferramentas perdem força juntas. E a rede não alimenta só ferramentas: máquinas, sopradores e vazamentos tiram ar da mesma conta.\n\n4. Confira o ponto de uso. A Reitz é específica: no máximo duas ferramentas por conjunto lubrifil, mangueira de até 8 m com diâmetro interno de 9,5 mm (pino RV1) ou 12,7 mm (pino RV2), nada de mangueira em espiral e o conjunto no mesmo nível ou acima da ferramenta. O fabricante chama essas recomendações de indispensáveis para o funcionamento e para a garantia.\n\nA HTECH faz essa conta antes da próxima ferramenta: levanta o que trabalha junto, compara com o compressor e a rede, especifica a Reitz certa para a aplicação e acerta o ponto de uso. Se a ferramenta for o problema, a gente diz também.\n\nVazões e recomendações do catálogo Reitz 2026, marca que representamos.\n\n#htechmotionsolutions #solucoesindustriais #ferramentaspneumaticas #arcomprimido"
+  },
+  "midia": [
+    "f3-01.jpg",
+    "f3-02.jpg",
+    "f3-03.jpg",
+    "f3-04.jpg",
+    "f3-05.jpg",
+    "f3-06.jpg",
+    "f3-07.jpg"
+  ]
+}

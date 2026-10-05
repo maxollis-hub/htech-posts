@@ -1,0 +1,23 @@
+{
+  "id": "A1",
+  "titulo": "A pressão a mais também tem preço",
+  "quando": "2026-10-13T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "A ferramenta perdeu força no fim da linha e a solução foi subir a pressão do compressor? ⚙️\n\nFunciona por uns dias. E cobra três vezes: o compressor trabalha mais, cada vazamento perde mais ar e a ferramenta perto do compressor passa a trabalhar acima da pressão prevista.\n\nPressão alta no compressor e baixa na ferramenta é sintoma de rede, não de compressor fraco.\n\n1️⃣ Meça no ponto de uso, com a ferramenta acionada. Parada, a rede equaliza e mostra pressão cheia. A Reitz indica 6 a 7 bar lidos assim.\n\n2️⃣ Compare com a saída do compressor. Mais de ~1 bar de diferença com tudo funcionando é problema de rede.\n\n3️⃣ Procure onde a pressão se perde: tubulação que ficou pequena, filtro saturado, vazamento.\n\nArrasta pra ver por onde começar.\n\nPressão sobrando no compressor e faltando na ponta? Chama no direct ou pelo link na bio.\n\n📌 Critérios de pressão do manual de ferramentas pneumáticas Reitz.\n\n#htechmotionsolutions #solucoesindustriais #arcomprimido #manutencaoindustrial #ferramentaspneumaticas #juizdefora",
+    "linkedin": "\"A ferramenta não tem força no fim da linha. Sobe a pressão do compressor.\"\n\nÉ uma das correções mais comuns em rede de ar. E uma das mais caras, porque esconde o problema em vez de resolver.\n\nSubir a pressão no compressor cobra três vezes:\n1. O compressor trabalha mais para entregar pressão maior.\n2. Cada vazamento perde mais ar, porque pelo mesmo furo sai mais ar quando a pressão sobe.\n3. A ferramenta perto do compressor passa a trabalhar acima da pressão prevista, o que o manual Reitz liga a desgaste prematuro.\n\nE a ponta da linha continua sem pressão, porque a causa ficou na rede.\n\nAntes de mexer no compressor:\n\nMeça onde a ferramenta trabalha, com ela funcionando. Parada, a rede equaliza e o manômetro mostra pressão cheia; a queda só aparece com consumo. A Reitz indica 6 a 7 bar no regulador do ponto de uso, lidos com a ferramenta acionada, e chama essa faixa de ideal e mais econômica.\n\nCompare com a saída do compressor, no horário de maior consumo. O manual Reitz pede rede dimensionada para que todas as ferramentas funcionem juntas com queda de no máximo ~1 bar. Passou disso, o problema é a rede.\n\nDepois, procure onde a pressão se perde: tubulação que ficou pequena depois de cada ampliação, filtro saturado que estrangula o fluxo, vazamento que consome ar o turno inteiro. Comece pelo mais barato: filtro e dreno, depois vazamentos, só então diâmetros.\n\nA HTECH mede a pressão no ponto de uso em operação, localiza vazamentos com ultrassom e corrige a rede, com preparação de ar da linha Pneumática Automação. Se o problema for o compressor, a gente diz também.\n\n#htechmotionsolutions #solucoesindustriais #arcomprimido #manutencaoindustrial"
+  },
+  "midia": [
+    "a1-01.jpg",
+    "a1-02.jpg",
+    "a1-03.jpg",
+    "a1-04.jpg",
+    "a1-05.jpg",
+    "a1-06.jpg",
+    "a1-07.jpg"
+  ]
+}

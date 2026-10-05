@@ -1,0 +1,23 @@
+{
+  "id": "L1",
+  "titulo": "LED: faça a conta antes de trocar",
+  "quando": "2026-10-20T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "Quanto a luz do seu galpão custa por mês? 💡\n\nSem esse número, qualquer promessa de economia com LED é chute. A conta cabe numa linha:\n\nkW instalados × horas acesas por dia × dias no mês × valor do kWh\n\nTrês cuidados para ela sair certa:\n\n1️⃣ Em lâmpada de descarga (vapor metálico, sódio), conte a potência do conjunto, lâmpada mais reator.\n\n2️⃣ Faça por área. As mesmas luminárias custam o triplo numa área de três turnos do que numa de um turno.\n\n3️⃣ Some a manutenção em altura: lâmpada, reator, ignitor, plataforma, mão de obra e a área parada embaixo.\n\nArrasta pra ver a conta completa.\n\nQuer saber quanto a luz do seu galpão custa hoje? Chama no direct ou pelo link na bio.\n\n📌 Luminárias AVLIGHT, marca representada pela HTECH.\n\n#htechmotionsolutions #solucoesindustriais #iluminacaoled #iluminacaoindustrial #manutencaoindustrial #juizdefora",
+    "linkedin": "\"Quanto vou economizar trocando para LED?\"\n\nA pergunta certa vem antes: quanto a iluminação custa hoje? Sem esse número, qualquer promessa de economia é chute.\n\nA conta de hoje cabe numa linha: potência instalada (kW) × horas acesas por dia × dias no mês × valor do kWh. Com números redondos, só de exemplo: 16 kW × 24 h × 30 dias × R$ 0,80 = R$ 9.216 por mês.\n\nTrês cuidados para ela sair certa:\n\n1. A potência que conta é a do conjunto. Em lâmpada de descarga, como vapor metálico ou sódio, o reator também consome. O número que vai para a conta é o de lâmpada mais reator, não só o impresso na lâmpada.\n\n2. As horas pesam mais do que parece. As mesmas luminárias custam o triplo numa área de três turnos do que numa de um turno. Por isso as áreas acesas o dia inteiro recuperam o investimento mais rápido, e não é preciso trocar tudo de uma vez: começa-se por elas.\n\n3. Existe uma segunda conta, a manutenção em altura. Toda troca de lâmpada, reator ou ignitor num pé-direito alto exige plataforma, gente subindo e, muitas vezes, a área de baixo parada. Não aparece na fatura de energia, mas aparece no orçamento da manutenção.\n\nA economia sai do projeto, não da luminária. A HTECH levanta pontos, horas e tarifa, calcula a luz que cada área precisa e devolve consumo estimado e prazo de retorno antes de qualquer compra. As luminárias são AVLIGHT, com herança tecnológica Dialight, fabricação nacional e filial em Varginha/MG. Se não compensar trocar agora, a gente diz.\n\n#htechmotionsolutions #solucoesindustriais #iluminacaoled #eficienciaenergetica"
+  },
+  "midia": [
+    "l1-01.jpg",
+    "l1-02.jpg",
+    "l1-03.jpg",
+    "l1-04.jpg",
+    "l1-05.jpg",
+    "l1-06.jpg",
+    "l1-07.jpg"
+  ]
+}

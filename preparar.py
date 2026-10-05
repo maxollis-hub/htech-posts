@@ -102,6 +102,13 @@ def preparar_post(caminho: Path):
               "se ainda nao saiu, este destino vai falhar e o post fica na fila")
 
     # ---- legendas
+    # as redes nao renderizam markdown: "**" saiu literal no P13–P15 (set/2026)
+    leg = post.get("legendas", {})
+    limpo = {k: v.replace("**", "") for k, v in leg.items()}
+    if limpo != leg:
+        post["legendas"] = limpo
+        caminho.write_text(json.dumps(post, indent=2, ensure_ascii=False), encoding="utf-8")
+        aviso(f"{pid}: '**' removido das legendas — as redes nao mostram negrito")
     for d in post.get("destinos", []):
         chave = "linkedin" if d.startswith("linkedin") else d
         texto = post.get("legendas", {}).get(chave)
