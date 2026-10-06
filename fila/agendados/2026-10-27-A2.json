@@ -1,0 +1,23 @@
+{
+  "id": "A2",
+  "titulo": "O ar que chega na ferramenta não é o que sai do compressor",
+  "quando": "2026-10-27T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "O ar que sai do compressor não é o que chega na ferramenta. 🔧\n\nEntre um e outro, água, óleo e partículas da própria tubulação podem chegar junto. O manual Reitz pede ar limpo, seco e com óleo lubrificante disperso. Para isso:\n\n1️⃣ Secador no início da rede, para retirar a água.\n2️⃣ No ponto de uso, nesta ordem: válvula liga/desliga, conjunto lubrifil (regulador, filtro e lubrificador) e a mangueira.\n3️⃣ Filtro com o copo drenado. Filtro subdimensionado estrangula o fluxo e deixa passar água.\n4️⃣ Lubrificador com óleo SAE10, de 1 a 5 gotas por minuto conforme o consumo da ferramenta.\n\nArrasta pra ver o que verificar em cada ponto.\n\nA ferramenta está recebendo ar limpo, seco e lubrificado? Manda a foto do conjunto e do copo do filtro no direct ou pelo link na bio.\n\n📌 Critérios de instalação do manual e do catálogo Reitz. Filtros e conjuntos de preparação de ar da linha Pneumática Automação, marca representada pela HTECH.\n\n#htechmotionsolutions #solucoesindustriais #arcomprimido #manutencaoindustrial #ferramentaspneumaticas #juizdefora",
+    "linkedin": "\"A ferramenta desgasta rápido demais. Deve ser a qualidade da ferramenta.\"\n\nAntes de concluir isso, vale olhar o que ela está recebendo. O manual Reitz define o ar que a ferramenta pede: limpo, isento de umidade e com óleo lubrificante disperso. Os dois primeiros dependem da rede e do tratamento; o terceiro, do conjunto instalado no ponto de uso.\n\nO que verificar, nesta ordem:\n\n1. A ordem de instalação. A Reitz indica secador no início da rede para retirar a água. No ponto de uso: válvula liga/desliga (para abrir o conjunto sem parar a rede), conjunto lubrifil com regulador, filtro e lubrificador, e só então a mangueira.\n\n2. O copo do filtro. O filtro impede que poeira e partículas de oxidação da própria tubulação contaminem a ferramenta; o purgador elimina a água acumulada. Filtro subdimensionado estrangula o fluxo de ar e deixa passar água. Vale conferir se há água ou óleo no copo e a data da última drenagem e da troca do elemento.\n\n3. O lubrificador. Ferramenta pneumática pede óleo próprio, de viscosidade SAE10, com gotejamento de 1 a 5 gotas por minuto conforme o consumo de ar dela. Mangueira em espiral pode comprometer a lubrificação, por isso a Reitz não a indica.\n\nA HTECH levanta o que chega na ferramenta e especifica o tratamento para a rede real: filtros, secadores e conjuntos de preparação de ar, com a linha Parker distribuída pela Pneumática Automação. Se a preparação de ar já estiver certa, a gente diz também.\n\nCritérios de instalação: manual e catálogo Reitz. Linha Pneumática Automação, marca que representamos.\n\n#htechmotionsolutions #solucoesindustriais #arcomprimido #manutencaoindustrial"
+  },
+  "midia": [
+    "a2-01.jpg",
+    "a2-02.jpg",
+    "a2-03.jpg",
+    "a2-04.jpg",
+    "a2-05.jpg",
+    "a2-06.jpg",
+    "a2-07.jpg"
+  ]
+}

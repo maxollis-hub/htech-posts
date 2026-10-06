@@ -1,0 +1,23 @@
+{
+  "id": "T1",
+  "titulo": "Quanto custa a hora parada dessa linha?",
+  "quando": "2026-10-29T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "Quanto custa uma hora dessa linha parada? ⏱️\n\nSem esse número, ninguém sabe se um reparo compensa. A conta cabe numa linha:\n\nhoras paradas × (produção por hora + pessoal parado por hora) + reparo + recuperação\n\nCom números redondos, só de exemplo: 4 h × (R$ 3.000 + R$ 240) = R$ 12.960, antes de reparo e recuperação.\n\nE duas coisas que mudam o resultado:\n\n1️⃣ Quando a mesma falha volta, a conta inteira se repete: parada, mão de obra e peça.\n2️⃣ Os sinais costumam aparecer antes: alarme intermitente, ruído anormal, aquecimento fora do padrão.\n\nArrasta pra ver a conta completa.\n\nQuer calcular o custo da sua parada? Chama no direct ou pelo link na bio. Se não compensar reparar, a gente diz.\n\n#htechmotionsolutions #solucoesindustriais #manutencaoindustrial #paradanaoprogramada #confiabilidade #juizdefora",
+    "linkedin": "\"Quanto custou o reparo?\"\n\nÉ a pergunta que o financeiro faz. A que importa para a manutenção é outra: quanto custou a hora parada?\n\nA conta cabe numa linha: horas paradas × (produção por hora + pessoal parado por hora) + reparo + recuperação. Só de exemplo, com números redondos: 4 h × (R$ 3.000 de produção + R$ 240 de pessoal parado) = R$ 12.960, antes do reparo e da recuperação. Use os seus.\n\nCom o número na mão, duas leituras mudam:\n\n1. Quando a mesma falha volta, a conta inteira se repete. Reparo que corrige o sintoma e deixa a causa volta para a bancada, e cada volta custa parada, mão de obra e peça de novo. Vale levantar quantas vezes a mesma falha apareceu no mesmo equipamento no último ano.\n\n2. Os sinais costumam aparecer antes da parada. Alarmes intermitentes, ruído anormal, aquecimento fora do padrão e queda de desempenho costumam anteceder a falha definitiva, e são ignorados até a máquina parar de vez. Os alarmes intermitentes do último mês, nos equipamentos que mais custam quando param, são um bom ponto de partida.\n\nA HTECH investiga a causa em todo reparo e diz qual é a saída que faz sentido: reparar, trocar ou respecificar. Inclusive quando a resposta é que não compensa reparar.\n\n#htechmotionsolutions #solucoesindustriais #manutencaoindustrial #confiabilidade"
+  },
+  "midia": [
+    "t1-01.jpg",
+    "t1-02.jpg",
+    "t1-03.jpg",
+    "t1-04.jpg",
+    "t1-05.jpg",
+    "t1-06.jpg",
+    "t1-07.jpg"
+  ]
+}
