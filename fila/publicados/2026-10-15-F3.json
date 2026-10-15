@@ -19,5 +19,23 @@
     "f3-05.jpg",
     "f3-06.jpg",
     "f3-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-10-15T11:56:17.957347-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": true,
+        "id": "18652434358039324",
+        "permalink": null
+      },
+      "facebook": {
+        "ok": true,
+        "id": "115714084729335_1151258311188246"
+      },
+      "linkedin_perfil": {
+        "ok": true,
+        "id": "urn:li:ugcPost:7516512665645629441"
+      }
+    }
+  }
 }
