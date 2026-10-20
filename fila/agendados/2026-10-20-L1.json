@@ -4,8 +4,7 @@
   "quando": "2026-10-20T08:30:00",
   "destinos": [
     "instagram",
-    "facebook",
-    "linkedin_perfil"
+    "facebook"
   ],
   "legendas": {
     "instagram": "Quanto a luz do seu galpão custa por mês? 💡\n\nSem esse número, qualquer promessa de economia com LED é chute. A conta cabe numa linha:\n\nkW instalados × horas acesas por dia × dias no mês × valor do kWh\n\nTrês cuidados para ela sair certa:\n\n1️⃣ Em lâmpada de descarga (vapor metálico, sódio), conte a potência do conjunto, lâmpada mais reator.\n\n2️⃣ Faça por área. As mesmas luminárias custam o triplo numa área de três turnos do que numa de um turno.\n\n3️⃣ Some a manutenção em altura: lâmpada, reator, ignitor, plataforma, mão de obra e a área parada embaixo.\n\nArrasta pra ver a conta completa.\n\nQuer saber quanto a luz do seu galpão custa hoje? Chama no direct ou pelo link na bio.\n\n📌 Luminárias AVLIGHT, marca representada pela HTECH.\n\n#htechmotionsolutions #solucoesindustriais #iluminacaoled #iluminacaoindustrial #manutencaoindustrial #juizdefora",
@@ -19,5 +18,22 @@
     "l1-05.jpg",
     "l1-06.jpg",
     "l1-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-10-20T11:59:39.602321-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": false,
+        "erro": "400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/17841457435246565/media"
+      },
+      "facebook": {
+        "ok": false,
+        "erro": "400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/115714084729335/photos"
+      },
+      "linkedin_perfil": {
+        "ok": true,
+        "id": "urn:li:ugcPost:7518325124731699201"
+      }
+    }
+  }
 }
