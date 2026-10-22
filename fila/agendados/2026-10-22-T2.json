@@ -4,8 +4,7 @@
   "quando": "2026-10-22T08:30:00",
   "destinos": [
     "instagram",
-    "facebook",
-    "linkedin_perfil"
+    "facebook"
   ],
   "legendas": {
     "instagram": "Eurotherm, SSD, Allen-Bradley, WEG. Drive CC de linha antiga e inversor atual. ⚙️\n\nFotos nossas, de atendimentos em campo. Não de catálogo.\n\nDe uma marca para outra muda a parametrização, o código de falha e a reposição. O método de diagnóstico não muda:\n\n1️⃣ rede elétrica\n2️⃣ dimensionamento × carga real\n3️⃣ temperatura e ventilação do painel\n4️⃣ aterramento e ruído\n5️⃣ histórico de alarmes\n\nReparar sem investigar a causa é reparar para queimar de novo.\n\nDrive ou inversor parado, de qualquer marca? Manda a foto da etiqueta e do display no direct ou pelo link na bio.\n\n#htechmotionsolutions #solucoesindustriais #manutencaoindustrial #inversordefrequencia #automacaoindustrial #juizdefora",
@@ -19,5 +18,22 @@
     "t2-05.jpg",
     "t2-06.jpg",
     "t2-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-10-22T12:10:17.094534-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": false,
+        "erro": "400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/17841457435246565/media"
+      },
+      "facebook": {
+        "ok": false,
+        "erro": "400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/115714084729335/photos"
+      },
+      "linkedin_perfil": {
+        "ok": true,
+        "id": "urn:li:ugcPost:7519052583248994304"
+      }
+    }
+  }
 }
