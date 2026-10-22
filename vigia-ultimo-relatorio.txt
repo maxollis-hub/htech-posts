@@ -1,11 +1,12 @@
 *HTECH — vigia da publicacao*
-21/10/2026 12:33
+22/10/2026 12:35
 
 *ATENCAO*
 - L1 venceu 20/10 08:30 e nao publicou em instagram, facebook — instagram: 400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/17841457435246565/media; facebook: 400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/115714084729335/photos
-- a ultima execucao do robo falhou (5 seguida(s)) — ver a aba Actions
-- o token do LinkedIn vence em 4 dia(s) (2026-10-25) — renovar
+- T2 venceu 22/10 08:30 e nao publicou em instagram, facebook — instagram: 400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/17841457435246565/media; facebook: 400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/115714084729335/photos
+- a ultima execucao do robo falhou (8 seguida(s)) — ver a aba Actions
+- o token do LinkedIn vence em 3 dia(s) (2026-10-25) — renovar
 
-Ultimas execucoes do robo: 2026-10-21 15:09 failure, 2026-10-21 00:52 failure, 2026-10-20 22:15 failure, 2026-10-20 19:10 failure, 2026-10-20 14:59 failure
+Ultimas execucoes do robo: 2026-10-22 15:10 failure, 2026-10-22 00:53 failure, 2026-10-21 22:41 failure, 2026-10-21 19:16 failure, 2026-10-21 15:09 failure
 
 Aviso no WhatsApp: ENTREGUE — template 'aviso_publicacao' aceito · texto livre tambem enviado (chega se a janela estiver aberta)
