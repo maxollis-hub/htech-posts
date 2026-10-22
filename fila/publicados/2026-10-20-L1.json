@@ -20,15 +20,16 @@
     "l1-07.jpg"
   ],
   "resultado": {
-    "publicado_em": "2026-10-22T12:10:17.094534-03:00",
+    "publicado_em": "2026-10-22T16:11:55.524217-03:00",
     "destinos": {
       "instagram": {
-        "ok": false,
-        "erro": "400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/17841457435246565/media"
+        "ok": true,
+        "id": "17897289081413800",
+        "permalink": null
       },
       "facebook": {
-        "ok": false,
-        "erro": "400 Client Error: Bad Request for url: https://graph.facebook.com/v23.0/115714084729335/photos"
+        "ok": true,
+        "id": "115714084729335_1158534360460641"
       }
     }
   }
