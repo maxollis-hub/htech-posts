@@ -34,7 +34,7 @@ jobs:
           WA_DESTINO:          ${{ secrets.WA_DESTINO }}
           WA_TEMPLATE:         ${{ secrets.WA_TEMPLATE }}
           WA_TEMPLATE_LANG:    ${{ secrets.WA_TEMPLATE_LANG }}
-          LI_TOKEN_VALIDO_ATE: "2026-10-25"
+          LI_TOKEN_VALIDO_ATE: "2026-12-21"
         run: |
           if [ "${{ github.event.schedule }}" = "50 10 * * 1" ] || [ "${{ inputs.modo }}" = "semanal" ]; then
             python vigia.py --semanal
