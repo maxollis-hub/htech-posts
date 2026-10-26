@@ -1,6 +1,21 @@
 *HTECH — vigia da publicacao*
-26/10/2026 13:56
+26/10/2026 13:59
 
 Tudo em ordem: nada vencido na fila.
 
+*Publicado nos ultimos 7 dias:* 2
+- L1 · 22/10 16:11 · instagram, facebook
+- T2 · 22/10 16:11 · instagram, facebook
+
+*Na fila:* 8
+- A2 · 27/10 08:30 · instagram, facebook, linkedin_perfil
+- T1 · 29/10 08:30 · instagram, facebook, linkedin_perfil
+- F1 · 03/11 08:30 · instagram, facebook, linkedin_perfil
+- T4 · 05/11 08:30 · instagram, facebook, linkedin_perfil
+- L2 · 10/11 08:30 · instagram, facebook, linkedin_perfil
+- T3 · 12/11 08:30 · instagram, facebook, linkedin_perfil
+
+Lembrete: stories, reels e a pagina do LinkedIn continuam manuais.
 Ultimas execucoes do robo: 2026-10-26 16:45 success, 2026-10-24 00:34 success, 2026-10-23 22:03 success, 2026-10-23 19:07 success, 2026-10-23 14:58 success
+
+Aviso no WhatsApp: ENTREGUE — template 'aviso_publicacao' aceito · texto livre tambem enviado (chega se a janela estiver aberta)
