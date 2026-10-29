@@ -19,5 +19,23 @@
     "t1-05.jpg",
     "t1-06.jpg",
     "t1-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-10-29T13:52:57.040499-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": true,
+        "id": "18128564281918704",
+        "permalink": null
+      },
+      "facebook": {
+        "ok": true,
+        "id": "115714084729335_1165699413077469"
+      },
+      "linkedin_perfil": {
+        "ok": true,
+        "id": "urn:li:ugcPost:7521615359263522816"
+      }
+    }
+  }
 }
