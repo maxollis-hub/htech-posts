@@ -19,5 +19,23 @@
     "l2-05.jpg",
     "l2-06.jpg",
     "l2-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-11-10T08:31:44.024503-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": true,
+        "id": "18129905827852966",
+        "permalink": null
+      },
+      "facebook": {
+        "ok": true,
+        "id": "115714084729335_1178591058454971"
+      },
+      "linkedin_perfil": {
+        "ok": true,
+        "id": "urn:li:ugcPost:7525883239861919745"
+      }
+    }
+  }
 }
