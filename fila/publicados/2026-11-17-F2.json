@@ -19,5 +19,23 @@
     "f2-05.jpg",
     "f2-06.jpg",
     "f2-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-11-17T16:07:55.446582-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": true,
+        "id": "18344765932278003",
+        "permalink": null
+      },
+      "facebook": {
+        "ok": true,
+        "id": "115714084729335_1186440061003404"
+      },
+      "linkedin_perfil": {
+        "ok": true,
+        "id": "urn:li:ugcPost:7528534754204282880"
+      }
+    }
+  }
 }
