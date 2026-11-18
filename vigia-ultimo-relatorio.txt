@@ -1,9 +1,9 @@
 *HTECH — vigia da publicacao*
-17/11/2026 16:20
+18/11/2026 16:00
 
 *ATENCAO*
-- o token do LinkedIn vence em -23 dia(s) (2026-10-25) — renovar
+- o token do LinkedIn vence em -24 dia(s) (2026-10-25) — renovar
 
-Ultimas execucoes do robo: 2026-11-17 19:07 success, 2026-11-17 03:07 success, 2026-11-16 20:21 success, 2026-11-14 03:06 success, 2026-11-13 22:50 success
+Ultimas execucoes do robo: 2026-11-18 18:48 success, 2026-11-18 01:34 success, 2026-11-17 19:07 success, 2026-11-17 03:07 success, 2026-11-16 20:21 success
 
 Aviso no WhatsApp: ENTREGUE — template 'aviso_publicacao' aceito · texto livre tambem enviado (chega se a janela estiver aberta)
