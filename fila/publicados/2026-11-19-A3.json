@@ -19,5 +19,23 @@
     "a3-05.jpg",
     "a3-06.jpg",
     "a3-07.jpg"
-  ]
+  ],
+  "resultado": {
+    "publicado_em": "2026-11-19T15:57:28.257979-03:00",
+    "destinos": {
+      "instagram": {
+        "ok": true,
+        "id": "18106928861017580",
+        "permalink": null
+      },
+      "facebook": {
+        "ok": true,
+        "id": "115714084729335_1188442804136463"
+      },
+      "linkedin_perfil": {
+        "ok": true,
+        "id": "urn:li:ugcPost:7529256887641468928"
+      }
+    }
+  }
 }
