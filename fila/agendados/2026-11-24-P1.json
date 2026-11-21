@@ -1,0 +1,23 @@
+{
+  "id": "P1",
+  "titulo": "Qual CLP para qual máquina? (Delta / Delma)",
+  "quando": "2026-11-24T08:30:00",
+  "destinos": [
+    "instagram",
+    "facebook",
+    "linkedin_perfil"
+  ],
+  "legendas": {
+    "instagram": "Qual CLP para qual máquina? ⚙️\n\nA Delta organiza a linha de CLP por aplicação:\n\n• DVP compacto (SA2, SX2, SE, SS2 e SV2): 2ª geração, até 480 ou 512 E/S digitais, conforme o modelo.\n• DVP-MC: controle de movimento em até 32 eixos, via CANopen ou EtherCAT.\n• Série AS: modular, sem rack, com expansão de até 32 módulos.\n• AX-3 e AX-5: motion com CODESYS, até 64 eixos em EtherCAT.\n\nE nas IHMs: DOP-300 (7\" e 10,1\") e DOP-100 (de 4,3\" a 15\").\n\nA HTECH levanta a sua necessidade e encaminha a compra da linha Delta. Manda a aplicação (quantos eixos, quantas E/S e qual rede) no direct ou pelo link na bio.\n\n📌 Dados do catálogo Delma 2026, págs. 2, 3, 4, 7 e 8. Delma Automação, marca representada pela HTECH.\n\n#htechmotionsolutions #solucoesindustriais #clp #ihm #automacaoindustrial #juizdefora",
+    "linkedin": "CLP não se escolhe pela marca. Escolhe-se pela máquina.\n\nA linha de CLP da Delta cobre aplicações diferentes, e o que separa uma família da outra é o que a máquina exige:\n\n• Compacto (DVP-SA2, SX2, SE, SS2 e SV2): 2ª geração, até 480 ou 512 E/S digitais.\n• Movimento (DVP-MC): até 32 eixos, via CANopen ou EtherCAT.\n• Modular (série AS): sem rack, expansão de até 32 módulos.\n• Motion com CODESYS (AX-3 e AX-5): até 64 eixos em EtherCAT.\n\nNas IHMs, a DOP-300 (7\" e 10,1\") e a DOP-100 (de 4,3\" a 15\").\n\nA HTECH levanta a sua necessidade e encaminha a compra. Para começar, três dados da máquina: quantos eixos, quantas E/S e qual rede.\n\nFonte: catálogo Delma 2026. Delma Automação é marca representada pela HTECH.\n\n#automacaoindustrial #CLP #IHM #manutencaoindustrial"
+  },
+  "midia": [
+    "p1-01.jpg",
+    "p1-02.jpg",
+    "p1-03.jpg",
+    "p1-04.jpg",
+    "p1-05.jpg",
+    "p1-06.jpg",
+    "p1-07.jpg"
+  ]
+}
